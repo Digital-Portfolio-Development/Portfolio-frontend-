@@ -12,12 +12,31 @@
 .user-icon {
 	text-align: center;
 }
+.profile-icon {
+	text-align: center;
+}
+.initials {
+	display: flex;
+	align-items: safe;
+	height: 40px;
+	font-size: 28px;
+	margin: 0;
+	font-weight: bold;
+}
+.profession {
+	display: flex;
+	align-items: safe;
+	height: 40px;
+	font-size: 20px;
+	margin: 0;
+}
 .header {
 	margin: 5px;
-  }
+}
 .horizontal-line {
 	border: 0;
 	border-bottom: 1px solid #e0e0e0;
+	margin-bottom: 10px;
 }
 .navbar {
 	width: 100%;
@@ -33,12 +52,50 @@
 }
 .navbar-menu {
 	list-style-type: none;
+	& li {
+		margin: 10px 0;
+		& a {
+			text-decoration: none;
+			color: #000;
+			padding-right: 57px;
+		}
+	}
 }
-.navbar-menu li {
-	margin: 10px 0;
+.initials-proff-icon {
+	& .container {
+		margin: 20px 0;
+	}
 }
-.navbar-menu li a {
+.descriprion-block {
+	word-wrap: break-word;
+	border-radius: 10px;
+	background-color: #f3f3f3;
+	padding: 10px;
+}
+.description-text {
+	font-size: 14px;
+}
+.socials-block {
+	word-wrap: break-word;
+	border-radius: 10px;
+	background-color: #f3f3f3;
+	padding: 10px;
+}
+.socials li {
+	list-style-type: none;
+	font-size: 14px;
+	padding: 3px 0;
+}
+.achievements-text {
+	list-style-type: none;
 	text-decoration: none;
 	color: #000;
-	padding-right: 57px;
+}
+.achievements {
+	& .row {
+		border-radius: 10px;
+		background-color: #f3f3f3;
+		padding: 10px;
+		margin-top: 20px;
+	}
 }
