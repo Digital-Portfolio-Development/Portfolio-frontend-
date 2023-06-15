@@ -85,11 +85,10 @@
 	list-style-type: none;
 	font-size: 14px;
 	padding: 3px 0;
-}
-.achievements-text {
-	list-style-type: none;
-	text-decoration: none;
-	color: #000;
+	& p {
+		display: inline-block;
+		margin: 0 4px;
+	}
 }
 .achievements {
 	& .row {
@@ -98,4 +97,118 @@
 		padding: 10px;
 		margin-top: 20px;
 	}
+	& p {
+		font-size: 24px;
+		margin-bottom: 0;
+		height: 100%;
+		display: flex;
+		align-items: center;
+	}
 }
+.add-portfolio {
+	font-size: 30px;
+	text-decoration: none;
+	color: #000;
+	display: flex;
+	justify-content: end;
+}
+.edit {
+	font-size: 18px;
+	text-decoration: none;
+	color: #000;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: end;
+	align-items: center;
+}
+.short-description {
+	border: 0;
+	padding: 2px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	width: 100%;
+	background-color: #e8e8e8;
+	word-wrap: break-word;
+}
+.short-desc-input {
+	display: flex;
+	align-items: center;
+}
+.short-desc-text p {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	font-size: 18px;
+}
+.description-wrap {
+	margin-top: 20px;
+}
+.full-desc-wrap {
+	margin-top: 20px;
+}
+.full-desc-text {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	font-size: 18px;
+}
+.full-description {
+	border: 0;
+	padding: 2px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	width: 100%;
+	background-color: #e8e8e8;
+}
+.full-desc-input {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	word-wrap: break-word;
+	& textarea {
+		height: 150px;
+	}
+}
+.achievements-link {
+	margin-top: 20px;
+}
+.link-text {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	font-size: 18px;
+}
+.link-input {
+	display: flex;
+	align-items: center;
+	& input {
+		border: 0;
+		padding: 2px;
+		box-sizing: border-box;
+		border-radius: 6px;
+		width: 100%;
+		background-color: #e8e8e8;
+	}
+}
+.button-wrap {
+	margin-top: 20px;
+	& button {
+		display: inline-block;
+  		color: white;
+  		text-decoration: none;
+  		padding: .5em 2em;
+  		outline: none;
+  		border-width: 2px 0;
+  		border-style: solid none;
+  		border-color: #FDBE33 #000 #D77206;
+  		border-radius: 6px;
+  		background: linear-gradient(#F3AE0F, #E38916) #E38916;
+  		transition: 0.2s;
+		&:hover { background: linear-gradient(#f5ae00, #f59500) #f5ae00; }
+		&:active { background: linear-gradient(#f59500, #f5ae00) #f59500; }
+	}
+} 
