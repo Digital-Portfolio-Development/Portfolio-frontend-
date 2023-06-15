@@ -362,3 +362,9 @@
   width: 100%;
   background-color: #e8e8e8;
 }
+.add-header {
+  margin-top: 20px;
+}
+.add-header h1 {
+  text-align: center;
+}
