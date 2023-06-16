@@ -11,17 +11,17 @@ function loadJSON(callback) {
   }
   
   function createWidget(title, description, link) {
-	const widgetContainer = document.getElementById('widgetContainer');
+	const widgetContainer = document.getElementById('placeholderContainer');
   
 	// Создание элементов виджета
 	const widget = document.createElement('div');
 	const widgetTitle = document.createElement('h2');
 	const widgetDescription = document.createElement('p');
-	widgetDescription.classList.add('widget-description');
+	widgetDescription.classList.add('placeholder-description');
   	widgetDescription.innerText = description;
 	const widgetLink = document.createElement('a');
 
-  	widgetDescription.classList.add('widget-place-description');
+  	widgetDescription.classList.add('widget-placeholder-description');
   	widgetDescription.innerText = description;
   
 	// Заполнение содержимого виджета
@@ -30,7 +30,7 @@ function loadJSON(callback) {
 	widgetLink.setAttribute('href', link);
 	widgetLink.innerText = link;
 
-	widget.classList.add('widget-place');
+	widget.classList.add('widget-placeholder');
   
 	// Добавление элементов виджета в контейнер
 	widget.appendChild(widgetTitle);

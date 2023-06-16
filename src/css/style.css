@@ -369,13 +369,13 @@
 .add-header h1 {
   text-align: center;
 }
-.widget-place {
+.widget-placeholder {
   background-color: #f3f3f3;
   border-radius: 10px;
   padding: 10px;
   margin-top: 20px;
 }
-.widget-place-description {
+.widget-placeholder-description {
   word-wrap: break-word;
 }
 .widget-place + .widget-place {
